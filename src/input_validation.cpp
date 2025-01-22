@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "../headers/input_validator.h"
+#include "../headers/input_validation.h"
 
 
     Input_validation::Input_validation() = default;

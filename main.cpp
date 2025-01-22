@@ -1,6 +1,6 @@
 #include <iostream>
 #include "./headers/Type.h"
-#include "./headers/input_validator.h"
+#include "./headers/input_validation.h"
 
 int main(int argc, char** argv) { // for input file
     if(argc < 2) {
