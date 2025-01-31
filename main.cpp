@@ -1,6 +1,7 @@
 #include <iostream>
 #include "./headers/Type.h"
-#include "./headers/input_validation.h"
+#include "./headers/validator/input_validation.h"
+#include "./headers/Types/BaseType/BaseType.h"
 
 int main(int argc, char** argv) { // for input file
     if(argc < 2) {
@@ -9,7 +10,6 @@ int main(int argc, char** argv) { // for input file
     }
 
     try {
-        std::cout << argv[1] << std::endl;
         Input_validation inp_validat(argv[1]);
     } catch (const std::exception& e){
         std::cerr << "Exception: " << e.what() << std::endl;

@@ -1,7 +1,7 @@
 #ifndef INPUT_VALIDATOR_H
 #define INPUT_VALIDATOR_H
 
-#include<fstream>
+#include <fstream>
 
 class Input_validation {
     private:
@@ -9,13 +9,11 @@ class Input_validation {
     bool validExtention (const std::string& fileName, const std::string& extention) const;
 
     public:
-    Input_validation ();
+    Input_validation () = default;
     explicit Input_validation (const std::string& fileName, const std::string& extention = "ssm");
     Input_validation(const std::fstream& fileName) = delete;
     ~Input_validation();
     bool validation (const std::fstream& file) const;
-
-
 };
 
 #endif
