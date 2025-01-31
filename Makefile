@@ -4,6 +4,10 @@ FILES =  main.cpp 		\
 		./src/validator/input_validation.cpp
 
 EXE = Interprete
+DEL = rm
 
 all:
 	$(G++) $(FILES) -o $(EXE)
+
+del:
+	$(DEL) $(EXE)
